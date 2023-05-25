@@ -1,20 +1,25 @@
 "use strict"
 let innerWord = prompt("Inserisci una parola")
 
-function reverseWord(word){
-    let reverse = '';
-    for(let i = word.length - 1; i >= 0; i--){
-        reverse += word[i]
-    }
+function reverseWord(parola){
+    let text = innerWord.split("").join("")
+    let reverse_text = innerWord.split("").reverse().join("")
 
-    return reverse;
+    if(parola === reverse_text){
+        return true;
+    }
+    else{
+        return false;
+    }
 }
 
-let reverse_word = reverseWord(innerWord)
+let control = reverseWord(innerWord)
 
-if(reverse_word === innerWord){
-    document.getElementById("word").innerHTML = innerWord
+if(control == true){
+    document.getElementById("word").innerHTML = "La parola è palindroma"
 }
 else{
-    alert("La parola è sbagliata. Inseriscine un'altra")
+    document.getElementById("word").innerHTML = "La parola non è palindroma"
 }
+
+
