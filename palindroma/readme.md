@@ -7,4 +7,4 @@ SOLUZIONE:
 4- Creare una variabile che ha come valore la funzione;
 5- Creare una condizione che:
     SE la parola al contrario è uguale alla parola inserita allora la parola è palindroma;
-    ALTRIMENTI la parola è sbagliata e va inserita un altra.
+    ALTRIMENTI la parola è sbagliata e va inserita una che è palindroma.
